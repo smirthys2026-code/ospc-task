@@ -1,0 +1,28 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem("theme")||(matchMedia("(prefers-color-scheme:light)").matches?"light":"dark")}catch(e){}</script>
+<title>Community | Decoded Files</title>
+<meta name="description" content="Fan wall, fan-favorite voting and FAQ for the Decoded Files fan hub.">
+<link rel="canonical" href="community.html"><meta name="theme-color" content="#0B0B0F">
+<meta property="og:title" content="Decoded Files Community"><meta property="og:description" content="Fan wall and voting"><meta property="og:image" content="assets/og.png"><meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Decoded Files Community"><meta name="twitter:image" content="assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='14' cy='14' r='9' fill='none' stroke='%23C1121F' stroke-width='4'/%3E%3Cpath d='M21 21l8 8' stroke='%23F4A300' stroke-width='4'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600&family=Noto+Sans+Tamil:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"><script src="script.js" defer></script></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav"><a class="logo" href="index.html">DECODED FILES</a>
+<button id="burger" aria-expanded="false" aria-controls="menu" aria-label="Open menu">☰</button>
+<nav id="menu" aria-label="Main"><a href="index.html#latest">Latest</a><a href="index.html#case-files">Case Files</a><a href="index.html#process">Process</a><a href="index.html#quiz">Quiz</a><a href="index.html#fanlines">Fan Lines</a><a href="index.html#signup">Join</a><a href="community.html#wall">Fan Wall</a><a href="community.html#vote">Vote</a><a href="community.html#faq">FAQ</a><a href="login.html" id="auth-link">Login</a><button id="theme" aria-label="Toggle theme">◐</button></nav></header>
+<main id="main">
+<section id="wall"><h2>Fan Wall</h2>
+<form id="wall-form" class="card" novalidate><label for="wn">Name</label><input id="wn" maxlength="40" required>
+<label for="wm">Message</label><textarea id="wm" rows="3" maxlength="280" required></textarea><p id="wc" class="muted">0/280</p>
+<button class="btn" type="submit">Post</button><p id="wall-status" aria-live="polite"></p></form>
+<div id="posts" class="grid"></div></section>
+<div class="tape"></div>
+<section id="vote"><h2>Fan-favorite voting</h2><p id="vote-status" aria-live="polite" class="muted"></p><div id="votes"></div></section>
+<div class="tape"></div>
+<section id="faq"><h2>FAQ</h2><div id="faqs"></div><button class="btn" id="share">Share this site</button><p id="share-status" aria-live="polite" class="muted"></p></section>
+</main>
+<footer><p>Unofficial fan-made tribute. Not affiliated with or endorsed by Saravanan Decodes.</p></footer>
+</body></html>

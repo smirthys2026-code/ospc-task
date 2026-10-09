@@ -1,0 +1,47 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem("theme")||(matchMedia("(prefers-color-scheme:light)").matches?"light":"dark")}catch(e){}</script>
+<title>Decoded Files | A fan hub for Saravanan Decodes</title>
+<meta name="description" content="Unofficial fan hub for Saravanan Decodes: browse case files, take the quiz, join the fan club.">
+<link rel="canonical" href="index.html"><meta name="theme-color" content="#0B0B0F">
+<meta property="og:title" content="Decoded Files"><meta property="og:description" content="A fan hub for Saravanan Decodes"><meta property="og:image" content="assets/og.png"><meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Decoded Files"><meta name="twitter:image" content="assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='14' cy='14' r='9' fill='none' stroke='%23C1121F' stroke-width='4'/%3E%3Cpath d='M21 21l8 8' stroke='%23F4A300' stroke-width='4'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600&family=Noto+Sans+Tamil:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"><script src="script.js" defer></script></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav"><a class="logo" href="index.html">DECODED FILES</a>
+<button id="burger" aria-expanded="false" aria-controls="menu" aria-label="Open menu">☰</button>
+<nav id="menu" aria-label="Main"><a href="index.html#latest">Latest</a><a href="index.html#case-files">Case Files</a><a href="index.html#process">Process</a><a href="index.html#quiz">Quiz</a><a href="index.html#fanlines">Fan Lines</a><a href="index.html#signup">Join</a><a href="community.html#wall">Fan Wall</a><a href="community.html#vote">Vote</a><a href="community.html#faq">FAQ</a><a href="login.html" id="auth-link">Login</a><button id="theme" aria-label="Toggle theme">◐</button></nav></header>
+<main id="main">
+<section class="hero"><p class="label">CASE #001 · <span class="redact">██████</span></p><h1>Every mystery has an answer. Let's decode it.</h1>
+<p>A fan-made tribute to Saravanan Decodes: Tamil mysteries, true crime and thrillers.</p>
+<div class="cta"><a class="btn" href="#case-files">Browse Case Files</a><a class="btn" href="#signup">Join the Fan Club</a><a class="btn ghost" id="chan" href="https://www.youtube.com/@saravanandecodes" target="_blank" rel="noopener">Visit Channel</a></div>
+<div id="stats" class="stats"></div><span class="stamp">DECODED</span></section>
+<div class="tape"></div>
+<section id="latest"><h2>Latest videos</h2><div id="featured" class="grid"></div></section>
+<div class="tape"></div>
+<section id="case-files"><h2>All Case Files</h2>
+<div class="tools"><div class="field"><label for="q">Search case files</label><div class="sbox"><input id="q" type="search" placeholder="Search by case title..." autocomplete="off"><button id="clear" type="button" aria-label="Clear search" hidden>✕</button></div></div>
+<div class="field"><label for="sort">Sort</label><select id="sort"><option value="new">Newest</option><option value="old">Oldest</option><option value="az">A to Z</option></select></div></div>
+<p id="count" aria-live="polite" class="muted"></p><div id="all" class="grid"></div>
+<div id="empty" hidden><p></p><button class="btn" id="reset">Reset search</button></div>
+<div id="err" hidden><p>Couldn't load the case files.</p><button class="btn" id="retry">Retry</button></div>
+<button class="btn" id="more" hidden>Load more</button></section>
+<div class="tape"></div>
+<section id="process"><h2>How a Case Gets Decoded</h2><ol id="timeline" class="timeline"></ol></section>
+<div class="tape"></div>
+<section id="quiz"><h2>How well do you know the case files?</h2><div id="quizbox" class="card"></div></section>
+<div class="tape"></div>
+<section id="fanlines"><h2>Fan Lines</h2><p class="muted">Fan-made lines. Not official quotes.</p><div id="lines" class="cta"></div><button class="btn ghost" id="mute" aria-pressed="false">Mute: off</button><div id="popup" class="popup" role="status"></div></section>
+<div class="tape"></div>
+<section id="signup"><h2>Join the Fan Club</h2>
+<form id="signup-form" class="card" novalidate>
+<label for="n">Name</label><input id="n" required maxlength="60" autocomplete="name">
+<label for="e">Email</label><input id="e" type="email" required autocomplete="email">
+<label for="fv">Favorite video</label><select id="fv"></select>
+<label for="m">Message</label><textarea id="m" rows="3" maxlength="500"></textarea>
+<button class="btn" type="submit">Join</button><p id="form-status" aria-live="polite"></p></form></section>
+</main>
+<footer><p>Unofficial fan-made tribute. Not affiliated with or endorsed by Saravanan Decodes.</p></footer>
+</body></html>
